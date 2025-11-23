@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menyu - Mirvari Restoranı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">Mirvari</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Səhifə</a></li>
+                    <li><a href="menu.html" class="active">Menyu</a></li>
+                    <li><a href="about.html">Haqqımızda</a></li>
+                    <li><a href="gallery.html">Qalereya</a></li>
+                    <li><a href="contact.html">Əlaqə</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Zəngin Menyumuz</h1>
+                <p>Hər zövqə uyğun unudulmaz təamlar</p>
+            </div>
+        </section>
+
+        <section class="menu-section container reveal">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Hamısı</button>
+                <button class="category-btn" data-category="səhər-yeməkləri">Səhər Yeməkləri</button>
+                <button class="category-btn" data-category="əsas-yeməklər">Əsas Yeməklər</button>
+                <button class="category-btn" data-category="dessertlər">Desertlər</button>
+                <button class="category-btn" data-category="isti-içkilər">İsti İçkilər</button>
+                <button class="category-btn" data-category="soyuq-içkilər">Soyuq İçkilər</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Səhər Yeməkləri -->
+                <div class="menu-item-card" data-category="səhər-yeməkləri" style="background-image: url('https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Klassik İngilis Səhər Yeməyi</h3>
+                        <p>Qızardılmış yumurta, sosis, bekon, pomidor, göbələk və lobya.</p>
+                        <div class="item-meta"><span class="price">18.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="səhər-yeməkləri" style="background-image: url('https://images.unsplash.com/photo-1484723050470-b5e-248a72147ada?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Avokado Tost</h3>
+                        <p>Tam taxıllı çörək üzərində əzilmiş avokado, poşe yumurta və çia toxumları.</p>
+                        <div class="item-meta"><span class="price">15.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="səhər-yeməkləri" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Pankeyk</h3>
+                        <p>Ağcaqayın siropu, təzə meyvələr və kərə yağı ilə servis edilən yumşaq pankeyklər.</p>
+                        <div class="item-meta"><span class="price">14.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="səhər-yeməkləri" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Milli Səhər Yeməyi</h3>
+                        <p>Təbii kənd məhsulları: bal, qaymaq, pendir, zeytun, təzə tərəvəzlər və isti təndir çörəyi.</p>
+                        <div class="item-meta"><span class="price">25.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="səhər-yeməkləri" style="background-image: url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1910&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Qayğanaq</h3>
+                        <p>Təzə göyərti və pomidorla hazırlanmış ləzzətli kənd qayğanağı.</p>
+                        <div class="item-meta"><span class="price">12.00 AZN</span></div>
+                    </div>
+                </div>
+
+                <!-- Əsas Yeməklər -->
+                <div class="menu-item-card" data-category="əsas-yeməklər" style="background-image: url('https://images.unsplash.com/photo-1559847844-5315695dadae?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Qril Edilmiş Steyk</h3>
+                        <p>Mükəmməl bişirilmiş, sulu və ədviyyatlı mal əti steyki, tərəvəz qarniri ilə.</p>
+                        <div class="item-meta"><span class="price">32.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="əsas-yeməklər" style="background-image: url('https://images.unsplash.com/photo-1625034694371-0a331585f670?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Norveç Qızılbalığı</h3>
+                        <p>Qril edilmiş Norveç qızılbalığı, ispanaq və limon sousu ilə.</p>
+                        <div class="item-meta"><span class="price">35.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="əsas-yeməklər" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Toyuqlu Fettuccine Alfredo</h3>
+                        <p>Təzə fettuccine pastası, qaymaqlı Alfredo sousu və qril edilmiş toyuq parçaları.</p>
+                        <div class="item-meta"><span class="price">22.00 AZN</span></div>
+                    </div>
+                </div>
+                 <div class="menu-item-card" data-category="əsas-yeməklər" style="background-image: url('https://images.unsplash.com/photo-1604329225310-a4b2423a3d5a?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Toyuq Langet</h3>
+                        <p>Xüsusi reseptlə hazırlanmış toyuq filesi, kartof püresi və təzə salat ilə.</p>
+                        <div class="item-meta"><span class="price">20.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="əsas-yeməklər" style="background-image: url('https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1928&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Pizza Marqarita</h3>
+                        <p>Nazik xəmir, təzə pomidor sousu, mozzarella pendiri və reyhan yarpaqları.</p>
+                        <div class="item-meta"><span class="price">18.00 AZN</span></div>
+                    </div>
+                </div>
+
+                <!-- Desertlər -->
+                <div class="menu-item-card" data-category="dessertlər" style="background-image: url('https://images.unsplash.com/photo-1571115177098-c1425db2e2a2?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Şokoladlı Fondan</h3>
+                        <p>İsti və axışqan şokoladlı kek, vanilli dondurma ilə.</p>
+                        <div class="item-meta"><span class="price">16.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="dessertlər" style="background-image: url('https://images.unsplash.com/photo-1517701550927-2e3bdc4236c9?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>San Sebastian Cheesecake</h3>
+                        <p>Ağızda əriyən, yüngül yanığa malik bənzərsiz ispan deserti.</p>
+                        <div class="item-meta"><span class="price">14.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="dessertlər" style="background-image: url('https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Tiramisu</h3>
+                        <p>Əsl İtalyan resepti ilə hazırlanmış, qəhvə və maskarpone pendirinin ecazkar uyumu.</p>
+                        <div class="item-meta"><span class="price">15.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="dessertlər" style="background-image: url('https://images.unsplash.com/photo-1610444337294-4b53434c4f52?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Paxlava</h3>
+                        <p>Nazik xəmir qatları, qoz ləpəsi və şərbətin mükəmməl birləşməsi.</p>
+                        <div class="item-meta"><span class="price">10.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="dessertlər" style="background-image: url('https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Brownie</h3>
+                        <p>Qaynar şokoladlı brownie, bir top dondurma ilə.</p>
+                        <div class="item-meta"><span class="price">13.00 AZN</span></div>
+                    </div>
+                </div>
+
+                <!-- İçkilər -->
+                <div class="menu-item-card" data-category="isti-içkilər" style="background-image: url('https://images.unsplash.com/photo-1572442388858-bbd98ae7509f?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Latte</h3>
+                        <p>Espresso, isti süd və zərif süd köpüyünün mükəmməl harmoniyası.</p>
+                        <div class="item-meta"><span class="price">7.00 AZN</span></div>
+                    </div>
+                </div>
+                 <div class="menu-item-card" data-category="isti-içkilər" style="background-image: url('https://images.unsplash.com/photo-1549922344-1f1b2c5aa1e7?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>İsti Şokolad</h3>
+                        <p>Əsl Belçika şokoladından hazırlanmış, zərif və qaymaqlı içki.</p>
+                        <div class="item-meta"><span class="price">8.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="isti-içkilər" style="background-image: url('https://images.unsplash.com/photo-1511920170033-f83297241116?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Americano</h3>
+                        <p>İsti su ilə zənginləşdirilmiş klassik espresso.</p>
+                        <div class="item-meta"><span class="price">6.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="soyuq-içkilər" style="background-image: url('https://images.unsplash.com/photo-1551024709-8f23befc6f81?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Mojito</h3>
+                        <p>Təzə nanə, laym, ağ rom və soda suyunun sərinləşdirici qarışımı.</p>
+                        <div class="item-meta"><span class="price">14.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="soyuq-içkilər" style="background-image: url('https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Ev Yapımı Limonad</h3>
+                        <p>Təzə sıxılmış limon suyu, nanə və bir az şəkər ilə hazırlanmış klassik sərinlik.</p>
+                        <div class="item-meta"><span class="price">8.00 AZN</span></div>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="soyuq-içkilər" style="background-image: url('https://images.unsplash.com/photo-1619566636858-51d8005b76fb?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Təzə Sıxılmış Portağal Şirəsi</h3>
+                        <p>Gününüzə enerji qatmaq üçün təbii və vitamins dolu portağal şirəsi.</p>
+                        <div class="item-meta"><span class="price">9.00 AZN</span></div>
+                    </div>
+                </div>
+                 <div class="menu-item-card" data-category="soyuq-içkilər" style="background-image: url('https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1937&auto=format&fit=crop');">
+                    <div class="item-details">
+                        <h3>Buzlu Latte</h3>
+                        <p>Sərin süd və buz üzərinə əlavə edilmiş zəngin espresso.</p>
+                        <div class="item-meta"><span class="price">8.00 AZN</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 class="logo-text">Mirvari</h3>
+                    <p>
+                        Zərif təamların və unudulmaz anların qovuşduğu məkan.
+                    </p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Sürətli Keçidlər</h3>
+                    <ul>
+                        <li><a href="index.html">Ana Səhifə</a></li>
+                        <li><a href="menu.html">Menyu</a></li>
+                        <li><a href="about.html">Haqqımızda</a></li>
+                        <li><a href="gallery.html">Qalereya</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Bizimlə Əlaqə</h3>
+                    <span><i class="fas fa-map-marker-alt"></i> Nizami küç. 123, Bakı, AZ1005</span>
+                    <span><i class="fas fa-phone"></i> +994 12 345 67 89</span>
+                    <span><i class="fas fa-envelope"></i> elaqe@mirvari.az</span>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Mirvari | Bütün hüquqlar qorunur.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
